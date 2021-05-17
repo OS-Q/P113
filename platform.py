@@ -15,10 +15,6 @@ class P113Platform(PlatformBase):
                 "pioframework", []) and build_core != "arduino":
 
             framework_package = "framework-arduino-avr-%s" % build_core.lower()
-            if build_core in ("dtiny", "pro"):
-                framework_package = "framework-arduino-avr-digistump"
-            elif build_core in ("tiny", "tinymodern"):
-                framework_package = "framework-arduino-avr-attiny"
 
             self.frameworks["arduino"]["package"] = framework_package
             self.packages[framework_package]["optional"] = False
