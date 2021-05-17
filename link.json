@@ -22,7 +22,7 @@
   "frameworks": {
     "arduino": {
       "package": "framework-arduino-avr",
-      "script": "builder/frameworks/arduino.py"
+      "script": "extend/frameworks/arduino.py"
     }
   },
   "packages": {
